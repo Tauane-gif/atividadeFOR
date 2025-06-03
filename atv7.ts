@@ -1,11 +1,11 @@
 
-let teclado = require(`prompt-sync`)();
-
+ console.clear();
+ let teclado = require(`prompt-sync`)();
 let n = parseInt(teclado(`Digite o valor de n:`))
-let fatorial = 1 
+let fatorial : number  = 1; 
 
-for(let i = 1; i <= n; i++){
-    fatorial = fatorial * i 
+for(let z = 1; z <= n; z++){
+    fatorial *= z;  
 }
 
-console.log(n + `! = `, fatorial)
+console.log(fatorial); 
